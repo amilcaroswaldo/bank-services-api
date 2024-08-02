@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "PSCKfBln3b3a6EK6CccWB+umo3oegEgoxM3RlgM/RK8=",
+  "Source": "creditc_card_service",
+  "BasePath": "_content/creditc_card_service",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

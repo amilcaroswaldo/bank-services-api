@@ -1,0 +1,17 @@
+C:\Users\amilc\OneDrive\Documentos\Repos\creditc_card_service\creditcard.Infraestructure\obj\Debug\net6.0\creditcard.Infraestructure.csproj.AssemblyReference.cache
+C:\Users\amilc\OneDrive\Documentos\Repos\creditc_card_service\creditcard.Infraestructure\obj\Debug\net6.0\creditcard.Infraestructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\amilc\OneDrive\Documentos\Repos\creditc_card_service\creditcard.Infraestructure\obj\Debug\net6.0\creditcard.Infraestructure.AssemblyInfoInputs.cache
+C:\Users\amilc\OneDrive\Documentos\Repos\creditc_card_service\creditcard.Infraestructure\obj\Debug\net6.0\creditcard.Infraestructure.AssemblyInfo.cs
+C:\Users\amilc\OneDrive\Documentos\Repos\creditc_card_service\creditcard.Infraestructure\obj\Debug\net6.0\creditcard.Infraestructure.csproj.CoreCompileInputs.cache
+C:\Users\amilc\OneDrive\Documentos\Repos\creditc_card_service\creditcard.Infraestructure\bin\Debug\net6.0\creditcard.Infraestructure.deps.json
+C:\Users\amilc\OneDrive\Documentos\Repos\creditc_card_service\creditcard.Infraestructure\bin\Debug\net6.0\creditcard.Infraestructure.dll
+C:\Users\amilc\OneDrive\Documentos\Repos\creditc_card_service\creditcard.Infraestructure\bin\Debug\net6.0\creditcard.Infraestructure.pdb
+C:\Users\amilc\OneDrive\Documentos\Repos\creditc_card_service\creditcard.Infraestructure\bin\Debug\net6.0\creditcard.application.dll
+C:\Users\amilc\OneDrive\Documentos\Repos\creditc_card_service\creditcard.Infraestructure\bin\Debug\net6.0\creditcard.Domain.dll
+C:\Users\amilc\OneDrive\Documentos\Repos\creditc_card_service\creditcard.Infraestructure\bin\Debug\net6.0\creditcard.application.pdb
+C:\Users\amilc\OneDrive\Documentos\Repos\creditc_card_service\creditcard.Infraestructure\bin\Debug\net6.0\creditcard.Domain.pdb
+C:\Users\amilc\OneDrive\Documentos\Repos\creditc_card_service\creditcard.Infraestructure\obj\Debug\net6.0\creditcard.Infraestructure.csproj.CopyComplete
+C:\Users\amilc\OneDrive\Documentos\Repos\creditc_card_service\creditcard.Infraestructure\obj\Debug\net6.0\creditcard.Infraestructure.dll
+C:\Users\amilc\OneDrive\Documentos\Repos\creditc_card_service\creditcard.Infraestructure\obj\Debug\net6.0\refint\creditcard.Infraestructure.dll
+C:\Users\amilc\OneDrive\Documentos\Repos\creditc_card_service\creditcard.Infraestructure\obj\Debug\net6.0\creditcard.Infraestructure.pdb
+C:\Users\amilc\OneDrive\Documentos\Repos\creditc_card_service\creditcard.Infraestructure\obj\Debug\net6.0\ref\creditcard.Infraestructure.dll

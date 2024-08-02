@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33829.357
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1-Application", "1-Application", "{7DF1B16C-EC4F-4DE3-B822-831E1033C025}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2-infraestructure", "2-infraestructure", "{CAAB72BB-B886-4FF9-9D28-05ECBF3018D8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3-WebApi", "3-WebApi", "{31C41EF4-1EA0-4166-B06A-FE104E1B4D27}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "creditcard.application", "creditcard.application\creditcard.application.csproj", "{F06A974F-072A-4190-BE53-C09CA921B45F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "creditcard.Domain", "creditcard.Domain\creditcard.Domain.csproj", "{4EF62CBD-EA37-4D76-8EC6-EA92A97FD7B4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "creditcard.Infraestructure", "creditcard.Infraestructure\creditcard.Infraestructure.csproj", "{143D1DB0-0FEF-4BF8-8BD6-904E1EB8931A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "creditcard.webapi", "creditcard.webapi\creditcard.webapi.csproj", "{87E3CBC1-2F73-413C-8609-809FFC98E984}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F06A974F-072A-4190-BE53-C09CA921B45F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F06A974F-072A-4190-BE53-C09CA921B45F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F06A974F-072A-4190-BE53-C09CA921B45F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F06A974F-072A-4190-BE53-C09CA921B45F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4EF62CBD-EA37-4D76-8EC6-EA92A97FD7B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4EF62CBD-EA37-4D76-8EC6-EA92A97FD7B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4EF62CBD-EA37-4D76-8EC6-EA92A97FD7B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4EF62CBD-EA37-4D76-8EC6-EA92A97FD7B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{143D1DB0-0FEF-4BF8-8BD6-904E1EB8931A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{143D1DB0-0FEF-4BF8-8BD6-904E1EB8931A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{143D1DB0-0FEF-4BF8-8BD6-904E1EB8931A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{143D1DB0-0FEF-4BF8-8BD6-904E1EB8931A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{87E3CBC1-2F73-413C-8609-809FFC98E984}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87E3CBC1-2F73-413C-8609-809FFC98E984}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87E3CBC1-2F73-413C-8609-809FFC98E984}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87E3CBC1-2F73-413C-8609-809FFC98E984}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F06A974F-072A-4190-BE53-C09CA921B45F} = {7DF1B16C-EC4F-4DE3-B822-831E1033C025}
+		{4EF62CBD-EA37-4D76-8EC6-EA92A97FD7B4} = {7DF1B16C-EC4F-4DE3-B822-831E1033C025}
+		{143D1DB0-0FEF-4BF8-8BD6-904E1EB8931A} = {CAAB72BB-B886-4FF9-9D28-05ECBF3018D8}
+		{87E3CBC1-2F73-413C-8609-809FFC98E984} = {31C41EF4-1EA0-4166-B06A-FE104E1B4D27}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {326E0DE2-EF53-48E6-B514-7D9B5670A73F}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "3WmsunJtNGbu2FVimB8AGd/xl3/Xhz/QMsuY9+ZRYgc=",
+  "Source": "creditcard.webapi",
+  "BasePath": "_content/creditcard.webapi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

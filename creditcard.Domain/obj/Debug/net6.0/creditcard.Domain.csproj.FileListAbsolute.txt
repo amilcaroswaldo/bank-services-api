@@ -1,0 +1,12 @@
+C:\Users\amilc\OneDrive\Documentos\Repos\creditc_card_service\creditcard.Domain\bin\Debug\net6.0\creditcard.Domain.deps.json
+C:\Users\amilc\OneDrive\Documentos\Repos\creditc_card_service\creditcard.Domain\bin\Debug\net6.0\creditcard.Domain.dll
+C:\Users\amilc\OneDrive\Documentos\Repos\creditc_card_service\creditcard.Domain\bin\Debug\net6.0\creditcard.Domain.pdb
+C:\Users\amilc\OneDrive\Documentos\Repos\creditc_card_service\creditcard.Domain\obj\Debug\net6.0\creditcard.Domain.csproj.AssemblyReference.cache
+C:\Users\amilc\OneDrive\Documentos\Repos\creditc_card_service\creditcard.Domain\obj\Debug\net6.0\creditcard.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\amilc\OneDrive\Documentos\Repos\creditc_card_service\creditcard.Domain\obj\Debug\net6.0\creditcard.Domain.AssemblyInfoInputs.cache
+C:\Users\amilc\OneDrive\Documentos\Repos\creditc_card_service\creditcard.Domain\obj\Debug\net6.0\creditcard.Domain.AssemblyInfo.cs
+C:\Users\amilc\OneDrive\Documentos\Repos\creditc_card_service\creditcard.Domain\obj\Debug\net6.0\creditcard.Domain.csproj.CoreCompileInputs.cache
+C:\Users\amilc\OneDrive\Documentos\Repos\creditc_card_service\creditcard.Domain\obj\Debug\net6.0\creditcard.Domain.dll
+C:\Users\amilc\OneDrive\Documentos\Repos\creditc_card_service\creditcard.Domain\obj\Debug\net6.0\refint\creditcard.Domain.dll
+C:\Users\amilc\OneDrive\Documentos\Repos\creditc_card_service\creditcard.Domain\obj\Debug\net6.0\creditcard.Domain.pdb
+C:\Users\amilc\OneDrive\Documentos\Repos\creditc_card_service\creditcard.Domain\obj\Debug\net6.0\ref\creditcard.Domain.dll

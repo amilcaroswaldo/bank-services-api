@@ -1,0 +1,15 @@
+C:\Users\amilc\OneDrive\Documentos\Repos\creditc_card_service\creditcard.application\obj\Debug\net6.0\creditcard.application.csproj.AssemblyReference.cache
+C:\Users\amilc\OneDrive\Documentos\Repos\creditc_card_service\creditcard.application\obj\Debug\net6.0\creditcard.application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\amilc\OneDrive\Documentos\Repos\creditc_card_service\creditcard.application\obj\Debug\net6.0\creditcard.application.AssemblyInfoInputs.cache
+C:\Users\amilc\OneDrive\Documentos\Repos\creditc_card_service\creditcard.application\obj\Debug\net6.0\creditcard.application.AssemblyInfo.cs
+C:\Users\amilc\OneDrive\Documentos\Repos\creditc_card_service\creditcard.application\obj\Debug\net6.0\creditcard.application.csproj.CoreCompileInputs.cache
+C:\Users\amilc\OneDrive\Documentos\Repos\creditc_card_service\creditcard.application\bin\Debug\net6.0\creditcard.application.deps.json
+C:\Users\amilc\OneDrive\Documentos\Repos\creditc_card_service\creditcard.application\bin\Debug\net6.0\creditcard.application.dll
+C:\Users\amilc\OneDrive\Documentos\Repos\creditc_card_service\creditcard.application\bin\Debug\net6.0\creditcard.application.pdb
+C:\Users\amilc\OneDrive\Documentos\Repos\creditc_card_service\creditcard.application\bin\Debug\net6.0\creditcard.Domain.dll
+C:\Users\amilc\OneDrive\Documentos\Repos\creditc_card_service\creditcard.application\bin\Debug\net6.0\creditcard.Domain.pdb
+C:\Users\amilc\OneDrive\Documentos\Repos\creditc_card_service\creditcard.application\obj\Debug\net6.0\creditcard.application.csproj.CopyComplete
+C:\Users\amilc\OneDrive\Documentos\Repos\creditc_card_service\creditcard.application\obj\Debug\net6.0\creditcard.application.dll
+C:\Users\amilc\OneDrive\Documentos\Repos\creditc_card_service\creditcard.application\obj\Debug\net6.0\refint\creditcard.application.dll
+C:\Users\amilc\OneDrive\Documentos\Repos\creditc_card_service\creditcard.application\obj\Debug\net6.0\creditcard.application.pdb
+C:\Users\amilc\OneDrive\Documentos\Repos\creditc_card_service\creditcard.application\obj\Debug\net6.0\ref\creditcard.application.dll
