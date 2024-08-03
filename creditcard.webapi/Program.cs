@@ -27,6 +27,13 @@ builder.Services.Configure<ApiBehaviorOptions>(options =>
 {
     options.SuppressModelStateInvalidFilter = true;
 });
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowSpecificOrigin",
+        builder => builder.WithOrigins("http://localhost:3000")
+                          .AllowAnyHeader()
+                          .AllowAnyMethod());
+});
 builder.Services.AddHttpContextAccessor();
 builder.Services.AddDataProtection();
 builder.Services.AddRouting(opt => opt.LowercaseUrls = true);
@@ -72,9 +79,10 @@ app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "creditcard.
 
 app.UseHttpsRedirection();
 //app.UseHeaderPropagation();
+app.UseCors("AllowSpecificOrigin");
 app.UseRouting();
 app.UseHttpsRedirection();
-//app.UseAuthorization();
+app.UseAuthorization();
 app.MapControllers();
 
 app.Run();
