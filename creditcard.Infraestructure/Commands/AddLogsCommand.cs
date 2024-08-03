@@ -34,6 +34,7 @@ namespace creditcard.Infraestructure.Commands
                 {
                     response.Code = 0;
                     response.Message = $"No se registro el error en logs";
+                    return response;
                 }
                 response.Code = 1;
                 response.Message = $"El error ha sido registrado en la tabla logs";

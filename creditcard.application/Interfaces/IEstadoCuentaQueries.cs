@@ -1,5 +1,6 @@
 ﻿using creditcard.Domain.Base;
 using creditcard.Domain.ConfiguracionesResponse;
+using creditcard.Domain.EstadoCuentaResponse;
 using creditcard.Domain.FuncionesResponse;
 using System;
 using System.Collections.Generic;
@@ -14,5 +15,7 @@ namespace creditcard.application.Interfaces
         Task<ObjectResponse<InteresBonificableResponse>> GetInteresBonificable(string v_numero_tarjeta);
         Task<ObjectResponse<MontoContadoConInteresesResponse>> GetContadoConIntereses(string v_numero_tarjeta);
         Task<ObjectResponse<CoutaMinimaResponse>> GetCuotaMinima(string v_numero_tarjeta);
+        Task<ObjectResponse<EstadoCuentaRespons>> EstadoCuenta(string Numero_Tarjeta);
+        Task<ObjectResponse<NumeroTarjertaResponse>> GenerarNumeroTarjeta(string NumeroTarjeta);
     }
 }

@@ -128,8 +128,8 @@ BEGIN
         SET @MontoTotal = PackageEstadoCuenta.fn_CalcularMontoTotal(@Numero_Tarjeta,@FCH_CORTE_INICIO,@FCH_CORTE_FIN);
         SET @MontoContadoConIntereses = PackageEstadoCuenta.fn_CalcularMontoContadoConIntereses(@Numero_Tarjeta);
 
-        SELECT @saldo_actual  AS saldo_actual , 
-               @Saldo_Disponible AS Saldo_Disponible, 
+        SELECT @saldo_actual  AS SaldoActual , 
+               @Saldo_Disponible AS SaldoDisponible, 
                @InteresBonificable AS InteresBonificable,
                @CuotaMinima AS CuotaMinima,
                @MontoTotal AS MontoTotal,

@@ -4,6 +4,7 @@ using creditcard.application.Interfaces;
 using creditcard.application.UseCases.Interfaces;
 using creditcard.Domain.Base;
 using creditcard.Domain.ConfiguracionesResponse;
+using creditcard.Domain.EstadoCuentaResponse;
 using creditcard.Domain.FuncionesResponse;
 using System;
 using System.Collections.Generic;
@@ -23,6 +24,49 @@ namespace creditcard.application.UseCases
             _estadoCuentaQueries = estadoCuentaQueries;
             _logsUseCases = logsUseCases;
         }
+
+        public async Task<ObjectResponse<EstadoCuentaRespons>> EstadoCuenta(EstadoCuentaQuery query)
+        {
+            var response = new ObjectResponse<EstadoCuentaRespons>();
+            try
+            {
+                var result = await _estadoCuentaQueries.EstadoCuenta(query.Numero_Tarjeta);
+                if (result.Code == 0)
+                {
+                    #region logs catch queries
+                    AddLogsInDBCommand logsParams = new AddLogsInDBCommand();
+                    logsParams.ErrorNumber = 1;
+                    logsParams.ErrorMessage = result.Message;
+                    logsParams.OriginatingComponent = "CREDIT_CARD_SERVICE(API)";
+                    logsParams.AdditionalInfo = "EstadoCuenta.query failed, error searchin: " + query.Numero_Tarjeta;
+                    await _logsUseCases.AddlogsInDB(logsParams);
+                    #endregion
+                    response.Code = 0;
+                    response.Message = result.Message;
+                    response.Items = null;
+                    return response;
+                }
+                response = result;
+                return response;
+            }
+            catch (Exception ex)
+            {
+                #region logs use case
+                AddLogsInDBCommand logsParams = new AddLogsInDBCommand();
+                logsParams.ErrorNumber = 1;
+                logsParams.ErrorMessage = ex.Message;
+                logsParams.OriginatingComponent = "CREDIT_CARD_SERVICE(API)";
+                logsParams.AdditionalInfo = "EstadoCuenta failed, error" + ex.Source;
+                await _logsUseCases.AddlogsInDB(logsParams);
+                #endregion
+                response.Code = 0;
+                response.Message = ex.Message;
+                response.Items = null;
+                return response;
+            }
+
+        }
+
 
         public async Task<ObjectResponse<MontoContadoConInteresesResponse>> GetContadoConIntereses(MontoContadoConInteresesQuery query)
         {
