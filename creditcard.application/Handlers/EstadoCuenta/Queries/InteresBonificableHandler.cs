@@ -17,7 +17,7 @@ namespace creditcard.application.Handlers.EstadoCuenta.Queries
 
         public InteresBonificableHandler(IEstadoCuentaUseCases estadoCuentaUseCases) => _estadoCuentaUseCases = estadoCuentaUseCases;
 
-        public Task<ObjectResponse<InteresBonificableResponse>> Handle(InteresBonificableQuery request, CancellationToken cancellationToken)
-        => _estadoCuentaUseCases.GetInteresBonificable(request);
+        public async Task<ObjectResponse<InteresBonificableResponse>> Handle(InteresBonificableQuery request, CancellationToken cancellationToken)
+        => await _estadoCuentaUseCases.GetInteresBonificable(request);
     }
 }

@@ -16,7 +16,7 @@ namespace creditcard.application.Handlers.InfoClientehandler.Queries
         private readonly IInfoClientesUseCases _infoClientesUse;
 
         public GetTransaccionesByDateHandler(IInfoClientesUseCases infoClientesUse) => _infoClientesUse = infoClientesUse;
-        public Task<ListResponse<TransaccionesResponse>> Handle(TransaccionesQuery request, CancellationToken cancellationToken)
-        => _infoClientesUse.GetTransaccionesByDate(request);
+        public async Task<ListResponse<TransaccionesResponse>> Handle(TransaccionesQuery request, CancellationToken cancellationToken)
+        =>await _infoClientesUse.GetTransaccionesByDate(request);
     }
 }

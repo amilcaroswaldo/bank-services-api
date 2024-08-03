@@ -7,6 +7,7 @@ using Dapper;
 using Microsoft.Data.SqlClient;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -29,7 +30,7 @@ namespace creditcard.Infraestructure.Commands
             {
                 using var _connection = _appDbContext.GetDbConnection();
                 _connection.Open();
-                var result = await _connection.ExecuteAsync("sp_RegistrarLog", command);
+                var result = await _connection.ExecuteAsync("sp_RegistrarLog", command, commandType: CommandType.StoredProcedure);
                 if (result== 0)
                 {
                     response.Code = 0;

@@ -149,6 +149,7 @@ CREATE PROCEDURE PackageEstadoCuenta.sp_RealizarPago
     @Monto DECIMAL(18, 2)
 AS
 BEGIN
+	BEGIN TRANSACTION;
 	DECLARE @ErrorMessage NVARCHAR(4000);
     DECLARE @ErrorNumber INT;
     BEGIN TRY
@@ -190,7 +191,6 @@ END
 GO
 CREATE PROCEDURE PackageEstadoCuenta.sp_RegistrarTransaccion
     @Numero_Tarjeta VARCHAR(16),
-    @Fecha DATE,
     @Descripcion NVARCHAR(255),
     @Monto DECIMAL(18, 2),
     @Tipo_Transaccion VARCHAR(50),
@@ -198,13 +198,14 @@ CREATE PROCEDURE PackageEstadoCuenta.sp_RegistrarTransaccion
 AS
 BEGIN
     SET NOCOUNT ON;
+	BEGIN TRANSACTION;
     DECLARE @ErrorMessage NVARCHAR(4000);
     DECLARE @ErrorNumber INT;
     BEGIN TRY
         -- Validar que los campos requeridos no sean NULL
-        IF @Numero_Tarjeta IS NULL OR @Fecha IS NULL OR @Monto IS NULL OR @Tipo_Transaccion IS NULL
+        IF @Numero_Tarjeta IS NULL  OR @Monto IS NULL OR @Tipo_Transaccion IS NULL
         BEGIN
-            set @ErrorMessage = 'Los campos Numero_Tarjeta, Fecha, Monto y Tipo_Transaccion no pueden ser NULL.';
+            set @ErrorMessage = 'Los campos Numero_Tarjeta, Monto y Tipo_Transaccion no pueden ser NULL.';
             set @ErrorNumber = 0;
             RAISERROR(@ErrorMessage, 16, 1);
             EXEC sp_RegistrarLog @ErrorMessage, @ErrorNumber, 'PackageEstadoCuenta.sp_RegistrarTransaccion';
@@ -213,8 +214,12 @@ BEGIN
 
         -- Insertar la transacción en la tabla transacciones
         INSERT INTO transacciones (numero_tarjeta, fecha, descripcion, monto, tipo_transaccion, categoria)
-        VALUES (@Numero_Tarjeta, @Fecha, @Descripcion, @Monto, @Tipo_Transaccion, @Categoria);
-        commit;
+        VALUES (@Numero_Tarjeta, GETDATE(), @Descripcion, @Monto, @Tipo_Transaccion, @Categoria);
+       --actualiza saldos
+        UPDATE tarjetas
+		SET saldo_actual=saldo_actual + @Monto, saldo_disponible=saldo_disponible - @Monto
+		WHERE numero_tarjeta=@Numero_Tarjeta;
+		commit;
         -- Ejecutar el registro de log (si se requiere)
 --        EXEC sp_RegistrarLog 'Transacción registrada', 0, 'PackageEstadoCuenta.sp_RegistrarTransaccion';
     END TRY

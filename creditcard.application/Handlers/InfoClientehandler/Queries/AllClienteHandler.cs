@@ -17,7 +17,7 @@ namespace creditcard.application.Handlers.InfoClientehandler.Queries
 
         public AllClienteHandler(IInfoClientesUseCases infoClientesUse) => _infoClientesUse = infoClientesUse;
 
-        public Task<ListResponse<ClienteResponse>> Handle(ClienteQuery request, CancellationToken cancellationToken)
-        => _infoClientesUse.AllClientes(request);
+        public async Task<ListResponse<ClienteResponse>> Handle(ClienteQuery request, CancellationToken cancellationToken)
+        => await _infoClientesUse.AllClientes(request);
     }
 }

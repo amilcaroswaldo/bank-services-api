@@ -1,4 +1,5 @@
-﻿using creditcard.application.Features.EstadoCuenta.Queries;
+﻿using creditcard.application.Features.EstadoCuenta.Commands;
+using creditcard.application.Features.EstadoCuenta.Queries;
 using creditcard.Domain.Base;
 using creditcard.Domain.EstadoCuentaResponse;
 using creditcard.Domain.FuncionesResponse;
@@ -16,5 +17,7 @@ namespace creditcard.application.UseCases.Interfaces
         Task<ObjectResponse<MontoContadoConInteresesResponse>> GetContadoConIntereses(MontoContadoConInteresesQuery query);
         Task<ObjectResponse<CoutaMinimaResponse>> GetCuotaMinima(CuotaMinimaQuery query);
         Task<ObjectResponse<EstadoCuentaRespons>> EstadoCuenta(EstadoCuentaQuery query);
+        Task<GenericResponse> AddTransaccion(AddTransaccionCommand command);
+        Task<GenericResponse> Addpago(AddPagoCommand command);
     }
 }

@@ -25,6 +25,7 @@ namespace creditcard.Infraestructure
             services.AddTransient<ILogsCommand, AddLogsCommand>();
             services.AddTransient<IEstadoCuentaQueries, EstadoCuentaQueries>();
             services.AddTransient<IInfoClienteQueries, InfoClientesQueries>();
+            services.AddTransient<IEstadoCuentaCommand, EstadoCuentaCommand>();
             services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(Assembly.GetExecutingAssembly()));
         }
     }

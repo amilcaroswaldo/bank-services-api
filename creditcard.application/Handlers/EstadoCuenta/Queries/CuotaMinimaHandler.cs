@@ -17,7 +17,7 @@ namespace creditcard.application.Handlers.EstadoCuenta.Queries
 
         public CuotaMinimaHandler(IEstadoCuentaUseCases estadoCuentaUseCases)=> _estadoCuentaUseCases = estadoCuentaUseCases;
 
-        public Task<ObjectResponse<CoutaMinimaResponse>> Handle(CuotaMinimaQuery request, CancellationToken cancellationToken)
-        => _estadoCuentaUseCases.GetCuotaMinima(request);
+        public async Task<ObjectResponse<CoutaMinimaResponse>> Handle(CuotaMinimaQuery request, CancellationToken cancellationToken)
+        =>await _estadoCuentaUseCases.GetCuotaMinima(request);
     }
 }

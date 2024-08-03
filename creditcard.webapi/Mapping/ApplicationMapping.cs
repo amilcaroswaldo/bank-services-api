@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using creditcard.application.Features.Configurations.Queries;
+using creditcard.application.Features.EstadoCuenta.Commands;
 using creditcard.application.Features.EstadoCuenta.Queries;
 using creditcard.application.Features.HealthCheck.Queries;
 using creditcard.application.Features.IHealthCheck.Queries;
@@ -30,6 +31,8 @@ namespace creditcard.webapi.Mapping
             CreateMap<GetPagosFromTarjetaRequest, AllPagosQuery>().ReverseMap();
             CreateMap<GetTarjetasRequest, TarjetasQuery>().ReverseMap();
             CreateMap<GetTransaccionesRequest, TransaccionesQuery>().ReverseMap();
+            CreateMap<AddTransaccionRequest, AddTransaccionCommand>().ReverseMap();
+            CreateMap<AddpagoRequest, AddPagoCommand>().ReverseMap();
         }
     }
 }

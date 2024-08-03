@@ -13,7 +13,7 @@ builder.Services.AddSwaggerGen(c =>
 {
     c.SwaggerDoc("v1", new OpenApiInfo
     {
-        Title = "Employee.WebApi",
+        Title = "ServicesCreditCard.WebApi",
         Version = "v1"
     });
 });
@@ -30,7 +30,6 @@ builder.Services.Configure<ApiBehaviorOptions>(options =>
 builder.Services.AddHttpContextAccessor();
 builder.Services.AddDataProtection();
 builder.Services.AddRouting(opt => opt.LowercaseUrls = true);
-//swagger conf
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddHttpClient();
@@ -71,13 +70,6 @@ app.UseSwagger();
 app.UseValidationMiddleware();
 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "creditcard.webapi v1"));
 
-// Configure the HTTP request pipeline.
-
-//configure culture
-//var cultureInfo = new CultureInfo("es-Sv");
-//cultureInfo.NumberFormat.CurrencySymbol = "$";
-//CultureInfo.DefaultThreadCurrentCulture = cultureInfo;
-//CultureInfo.DefaultThreadCurrentUICulture = cultureInfo;
 app.UseHttpsRedirection();
 //app.UseHeaderPropagation();
 app.UseRouting();

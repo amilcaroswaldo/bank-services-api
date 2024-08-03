@@ -16,8 +16,8 @@ namespace creditcard.application.Handlers.EstadoCuenta.Queries
         private readonly IEstadoCuentaUseCases _estadoCuentaUseCases;
 
         public GetEstadoCuentaHandler(IEstadoCuentaUseCases estadoCuentaUseCases) => _estadoCuentaUseCases = estadoCuentaUseCases;
-        public Task<ObjectResponse<EstadoCuentaRespons>> Handle(EstadoCuentaQuery request, CancellationToken cancellationToken)
-        => _estadoCuentaUseCases.EstadoCuenta(request);
+        public async Task<ObjectResponse<EstadoCuentaRespons>> Handle(EstadoCuentaQuery request, CancellationToken cancellationToken)
+        => await _estadoCuentaUseCases.EstadoCuenta(request);
 
     }
 }

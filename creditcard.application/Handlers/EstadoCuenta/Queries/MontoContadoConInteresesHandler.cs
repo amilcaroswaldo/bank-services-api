@@ -17,7 +17,7 @@ namespace creditcard.application.Handlers.EstadoCuenta.Queries
 
         public MontoContadoConInteresesHandler(IEstadoCuentaUseCases estadoCuentaUseCases) => _estadoCuentaUseCases = estadoCuentaUseCases;
 
-        public Task<ObjectResponse<MontoContadoConInteresesResponse>> Handle(MontoContadoConInteresesQuery request, CancellationToken cancellationToken)
-        => _estadoCuentaUseCases.GetContadoConIntereses(request);
+        public async Task<ObjectResponse<MontoContadoConInteresesResponse>> Handle(MontoContadoConInteresesQuery request, CancellationToken cancellationToken)
+        => await _estadoCuentaUseCases.GetContadoConIntereses(request);
     }
 }
