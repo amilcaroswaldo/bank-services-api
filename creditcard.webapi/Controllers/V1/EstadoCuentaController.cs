@@ -82,11 +82,11 @@ namespace creditcard.webapi.Controllers.V1
             }
         }
 
-        [HttpGet("GetEstadoCuentaByRangeDate")]
+        [HttpGet("GetEstadoCuenta")]
         [ProducesResponseType(StatusCodes.Status400BadRequest, Type = typeof(ObjectResponse<EstadoCuentaRespons>))]
         [ProducesResponseType(StatusCodes.Status500InternalServerError, Type = typeof(ObjectResponse<EstadoCuentaRespons>))]
         [ProducesResponseType(typeof(ObjectResponse<EstadoCuentaRespons>), StatusCodes.Status200OK)]
-        public async Task<IActionResult> GetEstadoCuentaByRangeDate([FromQuery] GetEstadoCuentaRequest request)
+        public async Task<IActionResult> GetEstadoCuenta([FromQuery] GetEstadoCuentaRequest request)
         {
             if (!ModelState.IsValid)
             {

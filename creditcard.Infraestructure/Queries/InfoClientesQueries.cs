@@ -121,7 +121,22 @@ namespace creditcard.Infraestructure.Queries
 
         public async Task<ObjectResponse<TarjetaResponse>> GetTarjetaFromCliente(int IdCliente)
         {
-            string query = @"SELECT  nombre, valor FROM configuraciones WHERE nombre = @pName";
+            string query = @"SELECT
+	                            a.numero_tarjeta NumeroTarjeta,
+	                            a.cliente_id ClienteId,
+	                            a.limite_credito limiteCredito,
+	                            a.saldo_actual SaldoActual,
+	                            a.saldo_disponible SaldoDisp,
+	                            a.fecha_apertura FchApertura,
+	                            a.fecha_vencimiento FchaVenc,
+	                            a.fecha_corte_inicio FchCorteIni,
+	                            a.fecha_corte_fin FchCorteFin,
+                                b.descripcion DescBeneficios
+                            FROM
+	                            tarjetas a, beneficios_tarjeta b
+                            WHERE
+                                a.beneficios_id = b.beneficios_id and
+	                            cliente_id =@IdCliente";
             var mapParameters = new
             {
                 IdCliente
