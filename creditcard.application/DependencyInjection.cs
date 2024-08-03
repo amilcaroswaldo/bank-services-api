@@ -14,6 +14,7 @@ namespace creditcard.application
             services.AddTransient<IhealthCheckUseCase, HealthCheckUseCases>();
             services.AddTransient<ILogsUseCases, LogsUseCases>();
             services.AddTransient<IEstadoCuentaUseCases, EstadoCuentaUseCase>();
+            services.AddTransient<IInfoClientesUseCases, InfoClientesuseCases>();
             services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(Assembly.GetExecutingAssembly()));
         }
     }

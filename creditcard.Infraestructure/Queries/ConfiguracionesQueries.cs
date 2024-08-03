@@ -2,6 +2,7 @@
 using creditcard.application.Interfaces;
 using creditcard.Domain.Base;
 using creditcard.Domain.ConfiguracionesResponse;
+using creditcard.Domain.EstadoCuentaResponse;
 using creditcard.Infraestructure.DbContext.Interfaces;
 using Dapper;
 using Microsoft.Data.SqlClient;
@@ -34,8 +35,16 @@ namespace creditcard.Infraestructure.Queries
             {
                 using var _connection = _appDbContext.GetDbConnection();
                 _connection.Open();
-                
-                response.Items = await _connection.QueryFirstAsync<GetConfiguracion>(query, mapParameters);
+                var result = await _connection.QueryFirstAsync<GetConfiguracion>(query, mapParameters);
+                response.Items = result;
+                if (result == null)
+                {
+                    response.Code = 0;
+                    response.Message = $"No se encontro el valor";
+                    return response;
+                }
+                response.Code = 1;
+                response.Message = $"Success";
                 return response;
             }
             catch (SqlException ex)
@@ -52,7 +61,6 @@ namespace creditcard.Infraestructure.Queries
                 response.Items = null;
                 return response;
             }
-            //throw new NotImplementedException();
         }
     }
 }

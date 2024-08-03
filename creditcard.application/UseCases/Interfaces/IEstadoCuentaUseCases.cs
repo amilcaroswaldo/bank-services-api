@@ -1,5 +1,6 @@
 ﻿using creditcard.application.Features.EstadoCuenta.Queries;
 using creditcard.Domain.Base;
+using creditcard.Domain.EstadoCuentaResponse;
 using creditcard.Domain.FuncionesResponse;
 using System;
 using System.Collections.Generic;
@@ -14,5 +15,6 @@ namespace creditcard.application.UseCases.Interfaces
         Task<ObjectResponse<InteresBonificableResponse>> GetInteresBonificable(InteresBonificableQuery query);
         Task<ObjectResponse<MontoContadoConInteresesResponse>> GetContadoConIntereses(MontoContadoConInteresesQuery query);
         Task<ObjectResponse<CoutaMinimaResponse>> GetCuotaMinima(CuotaMinimaQuery query);
+        Task<ObjectResponse<EstadoCuentaRespons>> EstadoCuenta(EstadoCuentaQuery query);
     }
 }
