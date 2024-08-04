@@ -1,5 +1,20 @@
 #Bank Services API - Documentación Técnica Resumen del Proyecto El proyecto Bank Services API se encarga de manejar la lógica de negocio para tarjetas de crédito y estados de cuenta, siguiendo una arquitectura modular y escalable basada en principios de desarrollo ágil y limpio.
 
+----------------------------------------------------------------
+
+Detalle de estrucutra:
+*dentro de appsettings estan la cadena de conexion hacia la base de datos.
+AL estar trabajado en una arquitectura ONION, tiene muchas carpetas el protecto, defino las mas importantes y sus contenidos.
+#creditcard.Domain--aqui se encuentra las rfespuestas de las consultas a la bd
+#creditcard.Infraestructure -- aqui esta los querys y commands, dentro queryes estan las clases que solo hacen consulta a la bd. dentro de commands estan las sentencias que modifican la base de datos
+#creditcard.application -- dentro de esta carpeta se maneka la logica de negocio. la carpeta que contiene la logica son los usesCases. 
+-en esta carpeta tambien se encuentran las interfaces y los handler.
+#creditcard.webapi -- carpeta donde se encuentran los controllers, las validaciones, middlewares, entre otras clases importantes.
+
+######en la raiz del proyecto esta la capeta scripts, dentro de ella se encuentra los scripts y sentencias utilizadas para crear la base de datos. 
+tambien va el sxript para migrar la base de datos con todas las transacciones que se hizo.
+###igualemente dentro de esta carpeta, van las colecciones de postman
+----
 Arquitectura Onion La arquitectura Onion se implementa para asegurar una separación clara de las preocupaciones y la flexibilidad en la evolución del software. Las capas principales son:
 
 Capa de Dominio:
