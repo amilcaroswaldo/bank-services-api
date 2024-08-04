@@ -108,3 +108,4 @@ C:\Users\amilc\OneDrive\Documentos\Repos\creditc_card_service\creditcard.webapi\
 C:\Users\amilc\OneDrive\Documentos\Repos\creditc_card_service\creditcard.webapi\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
 C:\Users\amilc\OneDrive\Documentos\Repos\creditc_card_service\creditcard.webapi\bin\Debug\net6.0\Microsoft.Extensions.Http.dll
 C:\Users\amilc\OneDrive\Documentos\Repos\creditc_card_service\creditcard.webapi\bin\Debug\net6.0\Microsoft.Extensions.Logging.dll
+C:\Users\amilc\OneDrive\Documentos\Repos\creditc_card_service\creditcard.webapi\bin\Debug\net6.0\System.Net.WebSockets.WebSocketProtocol.dll

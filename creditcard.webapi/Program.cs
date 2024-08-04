@@ -3,6 +3,7 @@ using creditcard.application;
 using creditcard.Infraestructure;
 using creditcard.webapi.Mapping;
 using creditcard.webapi.Middlewares;
+using creditcard.webapi.websocket;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.OpenApi.Models;
 using System.Globalization;
@@ -40,6 +41,7 @@ builder.Services.AddRouting(opt => opt.LowercaseUrls = true);
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddHttpClient();
+builder.Services.AddSignalR();
 #region mapper
 var mappingConfig = new MapperConfiguration(mc =>
 {
@@ -81,6 +83,7 @@ app.UseHttpsRedirection();
 //app.UseHeaderPropagation();
 app.UseCors("AllowSpecificOrigin");
 app.UseRouting();
+app.MapHub<TransactionHub>("/transactionHub");
 app.UseHttpsRedirection();
 app.UseAuthorization();
 app.MapControllers();
