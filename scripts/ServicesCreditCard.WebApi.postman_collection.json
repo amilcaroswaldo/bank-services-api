@@ -1,0 +1,2173 @@
+{
+	"info": {
+		"_postman_id": "5fe167b2-1adf-429b-bb5e-4e1458795d3c",
+		"name": "ServicesCreditCard.WebApi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "13865721"
+	},
+	"item": [
+		{
+			"name": "api",
+			"item": [
+				{
+					"name": "v1",
+					"item": [
+						{
+							"name": "creditcard",
+							"item": [
+								{
+									"name": "getsingleconfigurationbyname",
+									"item": [
+										{
+											"name": "/api/v1/creditcard/getsingleconfigurationbyname",
+											"request": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "text/plain"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/api/v1/creditcard/getsingleconfigurationbyname?Nombre=Porcentaje_Interes",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"v1",
+														"creditcard",
+														"getsingleconfigurationbyname"
+													],
+													"query": [
+														{
+															"key": "Nombre",
+															"value": "Porcentaje_Interes"
+														}
+													]
+												}
+											},
+											"response": [
+												{
+													"name": "OK",
+													"originalRequest": {
+														"method": "GET",
+														"header": [
+															{
+																"key": "Accept",
+																"value": "text/plain"
+															}
+														],
+														"url": {
+															"raw": "{{baseUrl}}/api/v1/creditcard/getsingleconfigurationbyname?Nombre=<string>",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"api",
+																"v1",
+																"creditcard",
+																"getsingleconfigurationbyname"
+															],
+															"query": [
+																{
+																	"key": "Nombre",
+																	"value": "<string>"
+																}
+															]
+														}
+													},
+													"status": "OK",
+													"code": 200,
+													"_postman_previewlanguage": "json",
+													"header": [
+														{
+															"key": "Content-Type",
+															"value": "application/json"
+														}
+													],
+													"cookie": [],
+													"body": "{\n  \"code\": \"<integer>\",\n  \"message\": \"<string>\",\n  \"items\": {\n    \"nombre\": \"<string>\",\n    \"valor\": \"<double>\"\n  }\n}"
+												},
+												{
+													"name": "Bad Request",
+													"originalRequest": {
+														"method": "GET",
+														"header": [
+															{
+																"key": "Accept",
+																"value": "text/plain"
+															}
+														],
+														"url": {
+															"raw": "{{baseUrl}}/api/v1/creditcard/getsingleconfigurationbyname?Nombre=<string>",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"api",
+																"v1",
+																"creditcard",
+																"getsingleconfigurationbyname"
+															],
+															"query": [
+																{
+																	"key": "Nombre",
+																	"value": "<string>"
+																}
+															]
+														}
+													},
+													"status": "Bad Request",
+													"code": 400,
+													"_postman_previewlanguage": "json",
+													"header": [
+														{
+															"key": "Content-Type",
+															"value": "application/json"
+														}
+													],
+													"cookie": [],
+													"body": "{\n  \"code\": \"<integer>\",\n  \"message\": \"<string>\",\n  \"items\": {\n    \"nombre\": \"<string>\",\n    \"valor\": \"<double>\"\n  }\n}"
+												},
+												{
+													"name": "Internal Server Error",
+													"originalRequest": {
+														"method": "GET",
+														"header": [
+															{
+																"key": "Accept",
+																"value": "text/plain"
+															}
+														],
+														"url": {
+															"raw": "{{baseUrl}}/api/v1/creditcard/getsingleconfigurationbyname?Nombre=<string>",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"api",
+																"v1",
+																"creditcard",
+																"getsingleconfigurationbyname"
+															],
+															"query": [
+																{
+																	"key": "Nombre",
+																	"value": "<string>"
+																}
+															]
+														}
+													},
+													"status": "Internal Server Error",
+													"code": 500,
+													"_postman_previewlanguage": "json",
+													"header": [
+														{
+															"key": "Content-Type",
+															"value": "application/json"
+														}
+													],
+													"cookie": [],
+													"body": "{\n  \"code\": \"<integer>\",\n  \"message\": \"<string>\",\n  \"items\": {\n    \"nombre\": \"<string>\",\n    \"valor\": \"<double>\"\n  }\n}"
+												}
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "estadocuenta",
+							"item": [
+								{
+									"name": "getinteresbonificable",
+									"item": [
+										{
+											"name": "/api/v1/estadocuenta/getinteresbonificable",
+											"request": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "text/plain"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/api/v1/estadocuenta/getinteresbonificable?NumeroTarjeta=1234-5678-9012-3",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"v1",
+														"estadocuenta",
+														"getinteresbonificable"
+													],
+													"query": [
+														{
+															"key": "NumeroTarjeta",
+															"value": "1234-5678-9012-3"
+														}
+													]
+												}
+											},
+											"response": [
+												{
+													"name": "OK",
+													"originalRequest": {
+														"method": "GET",
+														"header": [
+															{
+																"key": "Accept",
+																"value": "text/plain"
+															}
+														],
+														"url": {
+															"raw": "{{baseUrl}}/api/v1/estadocuenta/getinteresbonificable?NumeroTarjeta=<string>",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"api",
+																"v1",
+																"estadocuenta",
+																"getinteresbonificable"
+															],
+															"query": [
+																{
+																	"key": "NumeroTarjeta",
+																	"value": "<string>"
+																}
+															]
+														}
+													},
+													"status": "OK",
+													"code": 200,
+													"_postman_previewlanguage": "json",
+													"header": [
+														{
+															"key": "Content-Type",
+															"value": "application/json"
+														}
+													],
+													"cookie": [],
+													"body": "{\n  \"code\": \"<integer>\",\n  \"message\": \"<string>\",\n  \"items\": {\n    \"interesBonificable\": \"<double>\"\n  }\n}"
+												},
+												{
+													"name": "Bad Request",
+													"originalRequest": {
+														"method": "GET",
+														"header": [
+															{
+																"key": "Accept",
+																"value": "text/plain"
+															}
+														],
+														"url": {
+															"raw": "{{baseUrl}}/api/v1/estadocuenta/getinteresbonificable?NumeroTarjeta=<string>",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"api",
+																"v1",
+																"estadocuenta",
+																"getinteresbonificable"
+															],
+															"query": [
+																{
+																	"key": "NumeroTarjeta",
+																	"value": "<string>"
+																}
+															]
+														}
+													},
+													"status": "Bad Request",
+													"code": 400,
+													"_postman_previewlanguage": "json",
+													"header": [
+														{
+															"key": "Content-Type",
+															"value": "application/json"
+														}
+													],
+													"cookie": [],
+													"body": "{\n  \"code\": \"<integer>\",\n  \"message\": \"<string>\",\n  \"items\": {\n    \"interesBonificable\": \"<double>\"\n  }\n}"
+												},
+												{
+													"name": "Internal Server Error",
+													"originalRequest": {
+														"method": "GET",
+														"header": [
+															{
+																"key": "Accept",
+																"value": "text/plain"
+															}
+														],
+														"url": {
+															"raw": "{{baseUrl}}/api/v1/estadocuenta/getinteresbonificable?NumeroTarjeta=<string>",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"api",
+																"v1",
+																"estadocuenta",
+																"getinteresbonificable"
+															],
+															"query": [
+																{
+																	"key": "NumeroTarjeta",
+																	"value": "<string>"
+																}
+															]
+														}
+													},
+													"status": "Internal Server Error",
+													"code": 500,
+													"_postman_previewlanguage": "json",
+													"header": [
+														{
+															"key": "Content-Type",
+															"value": "application/json"
+														}
+													],
+													"cookie": [],
+													"body": "{\n  \"code\": \"<integer>\",\n  \"message\": \"<string>\",\n  \"items\": {\n    \"interesBonificable\": \"<double>\"\n  }\n}"
+												}
+											]
+										}
+									]
+								},
+								{
+									"name": "getcoutaminima",
+									"item": [
+										{
+											"name": "/api/v1/estadocuenta/getcoutaminima",
+											"request": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "text/plain"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/api/v1/estadocuenta/getcoutaminima?NumeroTarjeta=1234-5678-9012-3",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"v1",
+														"estadocuenta",
+														"getcoutaminima"
+													],
+													"query": [
+														{
+															"key": "NumeroTarjeta",
+															"value": "1234-5678-9012-3"
+														}
+													]
+												}
+											},
+											"response": [
+												{
+													"name": "OK",
+													"originalRequest": {
+														"method": "GET",
+														"header": [
+															{
+																"key": "Accept",
+																"value": "text/plain"
+															}
+														],
+														"url": {
+															"raw": "{{baseUrl}}/api/v1/estadocuenta/getcoutaminima?NumeroTarjeta=<string>",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"api",
+																"v1",
+																"estadocuenta",
+																"getcoutaminima"
+															],
+															"query": [
+																{
+																	"key": "NumeroTarjeta",
+																	"value": "<string>"
+																}
+															]
+														}
+													},
+													"status": "OK",
+													"code": 200,
+													"_postman_previewlanguage": "json",
+													"header": [
+														{
+															"key": "Content-Type",
+															"value": "application/json"
+														}
+													],
+													"cookie": [],
+													"body": "{\n  \"code\": \"<integer>\",\n  \"message\": \"<string>\",\n  \"items\": {\n    \"cuotaMinima\": \"<double>\"\n  }\n}"
+												},
+												{
+													"name": "Bad Request",
+													"originalRequest": {
+														"method": "GET",
+														"header": [
+															{
+																"key": "Accept",
+																"value": "text/plain"
+															}
+														],
+														"url": {
+															"raw": "{{baseUrl}}/api/v1/estadocuenta/getcoutaminima?NumeroTarjeta=<string>",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"api",
+																"v1",
+																"estadocuenta",
+																"getcoutaminima"
+															],
+															"query": [
+																{
+																	"key": "NumeroTarjeta",
+																	"value": "<string>"
+																}
+															]
+														}
+													},
+													"status": "Bad Request",
+													"code": 400,
+													"_postman_previewlanguage": "json",
+													"header": [
+														{
+															"key": "Content-Type",
+															"value": "application/json"
+														}
+													],
+													"cookie": [],
+													"body": "{\n  \"code\": \"<integer>\",\n  \"message\": \"<string>\",\n  \"items\": {\n    \"cuotaMinima\": \"<double>\"\n  }\n}"
+												},
+												{
+													"name": "Internal Server Error",
+													"originalRequest": {
+														"method": "GET",
+														"header": [
+															{
+																"key": "Accept",
+																"value": "text/plain"
+															}
+														],
+														"url": {
+															"raw": "{{baseUrl}}/api/v1/estadocuenta/getcoutaminima?NumeroTarjeta=<string>",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"api",
+																"v1",
+																"estadocuenta",
+																"getcoutaminima"
+															],
+															"query": [
+																{
+																	"key": "NumeroTarjeta",
+																	"value": "<string>"
+																}
+															]
+														}
+													},
+													"status": "Internal Server Error",
+													"code": 500,
+													"_postman_previewlanguage": "json",
+													"header": [
+														{
+															"key": "Content-Type",
+															"value": "application/json"
+														}
+													],
+													"cookie": [],
+													"body": "{\n  \"code\": \"<integer>\",\n  \"message\": \"<string>\",\n  \"items\": {\n    \"cuotaMinima\": \"<double>\"\n  }\n}"
+												}
+											]
+										}
+									]
+								},
+								{
+									"name": "getmontocontadoconintereses",
+									"item": [
+										{
+											"name": "/api/v1/estadocuenta/getmontocontadoconintereses",
+											"request": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "text/plain"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/api/v1/estadocuenta/getmontocontadoconintereses?NumeroTarjeta=1234-5678-9012-3",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"v1",
+														"estadocuenta",
+														"getmontocontadoconintereses"
+													],
+													"query": [
+														{
+															"key": "NumeroTarjeta",
+															"value": "1234-5678-9012-3"
+														}
+													]
+												}
+											},
+											"response": [
+												{
+													"name": "OK",
+													"originalRequest": {
+														"method": "GET",
+														"header": [
+															{
+																"key": "Accept",
+																"value": "text/plain"
+															}
+														],
+														"url": {
+															"raw": "{{baseUrl}}/api/v1/estadocuenta/getmontocontadoconintereses?NumeroTarjeta=<string>",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"api",
+																"v1",
+																"estadocuenta",
+																"getmontocontadoconintereses"
+															],
+															"query": [
+																{
+																	"key": "NumeroTarjeta",
+																	"value": "<string>"
+																}
+															]
+														}
+													},
+													"status": "OK",
+													"code": 200,
+													"_postman_previewlanguage": "json",
+													"header": [
+														{
+															"key": "Content-Type",
+															"value": "application/json"
+														}
+													],
+													"cookie": [],
+													"body": "{\n  \"code\": \"<integer>\",\n  \"message\": \"<string>\",\n  \"items\": {\n    \"montoContadoConIntereses\": \"<double>\"\n  }\n}"
+												},
+												{
+													"name": "Bad Request",
+													"originalRequest": {
+														"method": "GET",
+														"header": [
+															{
+																"key": "Accept",
+																"value": "text/plain"
+															}
+														],
+														"url": {
+															"raw": "{{baseUrl}}/api/v1/estadocuenta/getmontocontadoconintereses?NumeroTarjeta=<string>",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"api",
+																"v1",
+																"estadocuenta",
+																"getmontocontadoconintereses"
+															],
+															"query": [
+																{
+																	"key": "NumeroTarjeta",
+																	"value": "<string>"
+																}
+															]
+														}
+													},
+													"status": "Bad Request",
+													"code": 400,
+													"_postman_previewlanguage": "json",
+													"header": [
+														{
+															"key": "Content-Type",
+															"value": "application/json"
+														}
+													],
+													"cookie": [],
+													"body": "{\n  \"code\": \"<integer>\",\n  \"message\": \"<string>\",\n  \"items\": {\n    \"montoContadoConIntereses\": \"<double>\"\n  }\n}"
+												},
+												{
+													"name": "Internal Server Error",
+													"originalRequest": {
+														"method": "GET",
+														"header": [
+															{
+																"key": "Accept",
+																"value": "text/plain"
+															}
+														],
+														"url": {
+															"raw": "{{baseUrl}}/api/v1/estadocuenta/getmontocontadoconintereses?NumeroTarjeta=<string>",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"api",
+																"v1",
+																"estadocuenta",
+																"getmontocontadoconintereses"
+															],
+															"query": [
+																{
+																	"key": "NumeroTarjeta",
+																	"value": "<string>"
+																}
+															]
+														}
+													},
+													"status": "Internal Server Error",
+													"code": 500,
+													"_postman_previewlanguage": "json",
+													"header": [
+														{
+															"key": "Content-Type",
+															"value": "application/json"
+														}
+													],
+													"cookie": [],
+													"body": "{\n  \"code\": \"<integer>\",\n  \"message\": \"<string>\",\n  \"items\": {\n    \"montoContadoConIntereses\": \"<double>\"\n  }\n}"
+												}
+											]
+										}
+									]
+								},
+								{
+									"name": "getestadocuenta",
+									"item": [
+										{
+											"name": "/api/v1/estadocuenta/getestadocuenta",
+											"request": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "text/plain"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/api/v1/estadocuenta/getestadocuenta?Numero_Tarjeta=1234-5678-9012-3",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"v1",
+														"estadocuenta",
+														"getestadocuenta"
+													],
+													"query": [
+														{
+															"key": "Numero_Tarjeta",
+															"value": "1234-5678-9012-3"
+														}
+													]
+												}
+											},
+											"response": [
+												{
+													"name": "OK",
+													"originalRequest": {
+														"method": "GET",
+														"header": [
+															{
+																"key": "Accept",
+																"value": "text/plain"
+															}
+														],
+														"url": {
+															"raw": "{{baseUrl}}/api/v1/estadocuenta/getestadocuenta?Numero_Tarjeta=<string>",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"api",
+																"v1",
+																"estadocuenta",
+																"getestadocuenta"
+															],
+															"query": [
+																{
+																	"key": "Numero_Tarjeta",
+																	"value": "<string>"
+																}
+															]
+														}
+													},
+													"status": "OK",
+													"code": 200,
+													"_postman_previewlanguage": "json",
+													"header": [
+														{
+															"key": "Content-Type",
+															"value": "application/json"
+														}
+													],
+													"cookie": [],
+													"body": "{\n  \"code\": \"<integer>\",\n  \"message\": \"<string>\",\n  \"items\": {\n    \"saldoActual\": \"<double>\",\n    \"saldoDisponible\": \"<double>\",\n    \"interesBonificable\": \"<double>\",\n    \"cuotaMinima\": \"<double>\",\n    \"montoContadoConIntereses\": \"<double>\",\n    \"montoTotal\": \"<double>\",\n    \"montoTotalMesActualAnterior\": \"<double>\"\n  }\n}"
+												},
+												{
+													"name": "Bad Request",
+													"originalRequest": {
+														"method": "GET",
+														"header": [
+															{
+																"key": "Accept",
+																"value": "text/plain"
+															}
+														],
+														"url": {
+															"raw": "{{baseUrl}}/api/v1/estadocuenta/getestadocuenta?Numero_Tarjeta=<string>",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"api",
+																"v1",
+																"estadocuenta",
+																"getestadocuenta"
+															],
+															"query": [
+																{
+																	"key": "Numero_Tarjeta",
+																	"value": "<string>"
+																}
+															]
+														}
+													},
+													"status": "Bad Request",
+													"code": 400,
+													"_postman_previewlanguage": "json",
+													"header": [
+														{
+															"key": "Content-Type",
+															"value": "application/json"
+														}
+													],
+													"cookie": [],
+													"body": "{\n  \"code\": \"<integer>\",\n  \"message\": \"<string>\",\n  \"items\": {\n    \"saldoActual\": \"<double>\",\n    \"saldoDisponible\": \"<double>\",\n    \"interesBonificable\": \"<double>\",\n    \"cuotaMinima\": \"<double>\",\n    \"montoContadoConIntereses\": \"<double>\",\n    \"montoTotal\": \"<double>\",\n    \"montoTotalMesActualAnterior\": \"<double>\"\n  }\n}"
+												},
+												{
+													"name": "Internal Server Error",
+													"originalRequest": {
+														"method": "GET",
+														"header": [
+															{
+																"key": "Accept",
+																"value": "text/plain"
+															}
+														],
+														"url": {
+															"raw": "{{baseUrl}}/api/v1/estadocuenta/getestadocuenta?Numero_Tarjeta=<string>",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"api",
+																"v1",
+																"estadocuenta",
+																"getestadocuenta"
+															],
+															"query": [
+																{
+																	"key": "Numero_Tarjeta",
+																	"value": "<string>"
+																}
+															]
+														}
+													},
+													"status": "Internal Server Error",
+													"code": 500,
+													"_postman_previewlanguage": "json",
+													"header": [
+														{
+															"key": "Content-Type",
+															"value": "application/json"
+														}
+													],
+													"cookie": [],
+													"body": "{\n  \"code\": \"<integer>\",\n  \"message\": \"<string>\",\n  \"items\": {\n    \"saldoActual\": \"<double>\",\n    \"saldoDisponible\": \"<double>\",\n    \"interesBonificable\": \"<double>\",\n    \"cuotaMinima\": \"<double>\",\n    \"montoContadoConIntereses\": \"<double>\",\n    \"montoTotal\": \"<double>\",\n    \"montoTotalMesActualAnterior\": \"<double>\"\n  }\n}"
+												}
+											]
+										}
+									]
+								},
+								{
+									"name": "addpago",
+									"item": [
+										{
+											"name": "/api/v1/estadocuenta/addpago",
+											"request": {
+												"method": "POST",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json"
+													},
+													{
+														"key": "Accept",
+														"value": "text/plain"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n  \"numeroTarjeta\": \"1234-5678-9012-3\",\n  \"monto\": 10\n}",
+													"options": {
+														"raw": {
+															"headerFamily": "json",
+															"language": "json"
+														}
+													}
+												},
+												"url": "{{baseUrl}}/api/v1/estadocuenta/addpago"
+											},
+											"response": [
+												{
+													"name": "OK",
+													"originalRequest": {
+														"method": "POST",
+														"header": [
+															{
+																"key": "Content-Type",
+																"value": "application/json"
+															},
+															{
+																"key": "Accept",
+																"value": "text/plain"
+															}
+														],
+														"body": {
+															"mode": "raw",
+															"raw": "{\n  \"numeroTarjeta\": \"<string>\",\n  \"monto\": \"<double>\"\n}",
+															"options": {
+																"raw": {
+																	"headerFamily": "json",
+																	"language": "json"
+																}
+															}
+														},
+														"url": "{{baseUrl}}/api/v1/estadocuenta/addpago"
+													},
+													"status": "OK",
+													"code": 200,
+													"_postman_previewlanguage": "json",
+													"header": [
+														{
+															"key": "Content-Type",
+															"value": "application/json"
+														}
+													],
+													"cookie": [],
+													"body": "{\n  \"code\": \"<integer>\",\n  \"message\": \"<string>\"\n}"
+												},
+												{
+													"name": "Bad Request",
+													"originalRequest": {
+														"method": "POST",
+														"header": [
+															{
+																"key": "Content-Type",
+																"value": "application/json"
+															},
+															{
+																"key": "Accept",
+																"value": "text/plain"
+															}
+														],
+														"body": {
+															"mode": "raw",
+															"raw": "{\n  \"numeroTarjeta\": \"<string>\",\n  \"monto\": \"<double>\"\n}",
+															"options": {
+																"raw": {
+																	"headerFamily": "json",
+																	"language": "json"
+																}
+															}
+														},
+														"url": "{{baseUrl}}/api/v1/estadocuenta/addpago"
+													},
+													"status": "Bad Request",
+													"code": 400,
+													"_postman_previewlanguage": "json",
+													"header": [
+														{
+															"key": "Content-Type",
+															"value": "application/json"
+														}
+													],
+													"cookie": [],
+													"body": "{\n  \"code\": \"<integer>\",\n  \"message\": \"<string>\"\n}"
+												},
+												{
+													"name": "Internal Server Error",
+													"originalRequest": {
+														"method": "POST",
+														"header": [
+															{
+																"key": "Content-Type",
+																"value": "application/json"
+															},
+															{
+																"key": "Accept",
+																"value": "text/plain"
+															}
+														],
+														"body": {
+															"mode": "raw",
+															"raw": "{\n  \"numeroTarjeta\": \"<string>\",\n  \"monto\": \"<double>\"\n}",
+															"options": {
+																"raw": {
+																	"headerFamily": "json",
+																	"language": "json"
+																}
+															}
+														},
+														"url": "{{baseUrl}}/api/v1/estadocuenta/addpago"
+													},
+													"status": "Internal Server Error",
+													"code": 500,
+													"_postman_previewlanguage": "json",
+													"header": [
+														{
+															"key": "Content-Type",
+															"value": "application/json"
+														}
+													],
+													"cookie": [],
+													"body": "{\n  \"code\": \"<integer>\",\n  \"message\": \"<string>\"\n}"
+												}
+											]
+										}
+									]
+								},
+								{
+									"name": "addtransaccion",
+									"item": [
+										{
+											"name": "/api/v1/estadocuenta/addtransaccion",
+											"request": {
+												"method": "POST",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json"
+													},
+													{
+														"key": "Accept",
+														"value": "text/plain"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n  \"numeroTarjeta\": \"1234-5678-9012-3\",\n  \"descripcion\": \"pizza hub\",\n  \"monto\": \"44\",\n  \"tipoTransaccion\": \"Pago\",\n  \"categoria\": \"Comida\"\n}",
+													"options": {
+														"raw": {
+															"headerFamily": "json",
+															"language": "json"
+														}
+													}
+												},
+												"url": "{{baseUrl}}/api/v1/estadocuenta/addtransaccion"
+											},
+											"response": [
+												{
+													"name": "OK",
+													"originalRequest": {
+														"method": "POST",
+														"header": [
+															{
+																"key": "Content-Type",
+																"value": "application/json"
+															},
+															{
+																"key": "Accept",
+																"value": "text/plain"
+															}
+														],
+														"body": {
+															"mode": "raw",
+															"raw": "{\n  \"numeroTarjeta\": \"<string>\",\n  \"descripcion\": \"<string>\",\n  \"monto\": \"<double>\",\n  \"tipoTransaccion\": \"<string>\",\n  \"categoria\": \"<string>\"\n}",
+															"options": {
+																"raw": {
+																	"headerFamily": "json",
+																	"language": "json"
+																}
+															}
+														},
+														"url": "{{baseUrl}}/api/v1/estadocuenta/addtransaccion"
+													},
+													"status": "OK",
+													"code": 200,
+													"_postman_previewlanguage": "json",
+													"header": [
+														{
+															"key": "Content-Type",
+															"value": "application/json"
+														}
+													],
+													"cookie": [],
+													"body": "{\n  \"code\": \"<integer>\",\n  \"message\": \"<string>\"\n}"
+												},
+												{
+													"name": "Bad Request",
+													"originalRequest": {
+														"method": "POST",
+														"header": [
+															{
+																"key": "Content-Type",
+																"value": "application/json"
+															},
+															{
+																"key": "Accept",
+																"value": "text/plain"
+															}
+														],
+														"body": {
+															"mode": "raw",
+															"raw": "{\n  \"numeroTarjeta\": \"<string>\",\n  \"descripcion\": \"<string>\",\n  \"monto\": \"<double>\",\n  \"tipoTransaccion\": \"<string>\",\n  \"categoria\": \"<string>\"\n}",
+															"options": {
+																"raw": {
+																	"headerFamily": "json",
+																	"language": "json"
+																}
+															}
+														},
+														"url": "{{baseUrl}}/api/v1/estadocuenta/addtransaccion"
+													},
+													"status": "Bad Request",
+													"code": 400,
+													"_postman_previewlanguage": "json",
+													"header": [
+														{
+															"key": "Content-Type",
+															"value": "application/json"
+														}
+													],
+													"cookie": [],
+													"body": "{\n  \"code\": \"<integer>\",\n  \"message\": \"<string>\"\n}"
+												},
+												{
+													"name": "Internal Server Error",
+													"originalRequest": {
+														"method": "POST",
+														"header": [
+															{
+																"key": "Content-Type",
+																"value": "application/json"
+															},
+															{
+																"key": "Accept",
+																"value": "text/plain"
+															}
+														],
+														"body": {
+															"mode": "raw",
+															"raw": "{\n  \"numeroTarjeta\": \"<string>\",\n  \"descripcion\": \"<string>\",\n  \"monto\": \"<double>\",\n  \"tipoTransaccion\": \"<string>\",\n  \"categoria\": \"<string>\"\n}",
+															"options": {
+																"raw": {
+																	"headerFamily": "json",
+																	"language": "json"
+																}
+															}
+														},
+														"url": "{{baseUrl}}/api/v1/estadocuenta/addtransaccion"
+													},
+													"status": "Internal Server Error",
+													"code": 500,
+													"_postman_previewlanguage": "json",
+													"header": [
+														{
+															"key": "Content-Type",
+															"value": "application/json"
+														}
+													],
+													"cookie": [],
+													"body": "{\n  \"code\": \"<integer>\",\n  \"message\": \"<string>\"\n}"
+												}
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "healthcheck",
+							"item": [
+								{
+									"name": "checkdatabaseconnection",
+									"item": [
+										{
+											"name": "/api/v1/healthcheck/checkdatabaseconnection",
+											"request": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "text/plain"
+													}
+												],
+												"url": "{{baseUrl}}/api/v1/healthcheck/checkdatabaseconnection"
+											},
+											"response": [
+												{
+													"name": "OK",
+													"originalRequest": {
+														"method": "GET",
+														"header": [
+															{
+																"key": "Accept",
+																"value": "text/plain"
+															}
+														],
+														"url": "{{baseUrl}}/api/v1/healthcheck/checkdatabaseconnection"
+													},
+													"status": "OK",
+													"code": 200,
+													"_postman_previewlanguage": "json",
+													"header": [
+														{
+															"key": "Content-Type",
+															"value": "application/json"
+														}
+													],
+													"cookie": [],
+													"body": "{\n  \"code\": \"<integer>\",\n  \"message\": \"<string>\",\n  \"items\": {\n    \"nullable\": true\n  }\n}"
+												},
+												{
+													"name": "Bad Request",
+													"originalRequest": {
+														"method": "GET",
+														"header": [
+															{
+																"key": "Accept",
+																"value": "text/plain"
+															}
+														],
+														"url": "{{baseUrl}}/api/v1/healthcheck/checkdatabaseconnection"
+													},
+													"status": "Bad Request",
+													"code": 400,
+													"_postman_previewlanguage": "json",
+													"header": [
+														{
+															"key": "Content-Type",
+															"value": "application/json"
+														}
+													],
+													"cookie": [],
+													"body": "{\n  \"code\": \"<integer>\",\n  \"message\": \"<string>\",\n  \"items\": {\n    \"nullable\": true\n  }\n}"
+												},
+												{
+													"name": "Internal Server Error",
+													"originalRequest": {
+														"method": "GET",
+														"header": [
+															{
+																"key": "Accept",
+																"value": "text/plain"
+															}
+														],
+														"url": "{{baseUrl}}/api/v1/healthcheck/checkdatabaseconnection"
+													},
+													"status": "Internal Server Error",
+													"code": 500,
+													"_postman_previewlanguage": "json",
+													"header": [
+														{
+															"key": "Content-Type",
+															"value": "application/json"
+														}
+													],
+													"cookie": [],
+													"body": "{\n  \"code\": \"<integer>\",\n  \"message\": \"<string>\",\n  \"items\": {\n    \"nullable\": true\n  }\n}"
+												}
+											]
+										}
+									]
+								},
+								{
+									"name": "checkendpointconnection",
+									"item": [
+										{
+											"name": "/api/v1/healthcheck/checkendpointconnection",
+											"request": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "text/plain"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/api/v1/healthcheck/checkendpointconnection?Url={{baseUrl}}/api/v1/estadocuenta/getestadocuenta?Numero_Tarjeta=1234-5678-9012-3",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"v1",
+														"healthcheck",
+														"checkendpointconnection"
+													],
+													"query": [
+														{
+															"key": "Url",
+															"value": "{{baseUrl}}/api/v1/estadocuenta/getestadocuenta?Numero_Tarjeta=1234-5678-9012-3"
+														}
+													]
+												}
+											},
+											"response": [
+												{
+													"name": "OK",
+													"originalRequest": {
+														"method": "GET",
+														"header": [
+															{
+																"key": "Accept",
+																"value": "text/plain"
+															}
+														],
+														"url": {
+															"raw": "{{baseUrl}}/api/v1/healthcheck/checkendpointconnection?Url=<string>",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"api",
+																"v1",
+																"healthcheck",
+																"checkendpointconnection"
+															],
+															"query": [
+																{
+																	"key": "Url",
+																	"value": "<string>"
+																}
+															]
+														}
+													},
+													"status": "OK",
+													"code": 200,
+													"_postman_previewlanguage": "json",
+													"header": [
+														{
+															"key": "Content-Type",
+															"value": "application/json"
+														}
+													],
+													"cookie": [],
+													"body": "{\n  \"code\": \"<integer>\",\n  \"message\": \"<string>\",\n  \"items\": {\n    \"nullable\": true\n  }\n}"
+												},
+												{
+													"name": "Bad Request",
+													"originalRequest": {
+														"method": "GET",
+														"header": [
+															{
+																"key": "Accept",
+																"value": "text/plain"
+															}
+														],
+														"url": {
+															"raw": "{{baseUrl}}/api/v1/healthcheck/checkendpointconnection?Url=<string>",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"api",
+																"v1",
+																"healthcheck",
+																"checkendpointconnection"
+															],
+															"query": [
+																{
+																	"key": "Url",
+																	"value": "<string>"
+																}
+															]
+														}
+													},
+													"status": "Bad Request",
+													"code": 400,
+													"_postman_previewlanguage": "json",
+													"header": [
+														{
+															"key": "Content-Type",
+															"value": "application/json"
+														}
+													],
+													"cookie": [],
+													"body": "{\n  \"code\": \"<integer>\",\n  \"message\": \"<string>\",\n  \"items\": {\n    \"nullable\": true\n  }\n}"
+												},
+												{
+													"name": "Internal Server Error",
+													"originalRequest": {
+														"method": "GET",
+														"header": [
+															{
+																"key": "Accept",
+																"value": "text/plain"
+															}
+														],
+														"url": {
+															"raw": "{{baseUrl}}/api/v1/healthcheck/checkendpointconnection?Url=<string>",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"api",
+																"v1",
+																"healthcheck",
+																"checkendpointconnection"
+															],
+															"query": [
+																{
+																	"key": "Url",
+																	"value": "<string>"
+																}
+															]
+														}
+													},
+													"status": "Internal Server Error",
+													"code": 500,
+													"_postman_previewlanguage": "json",
+													"header": [
+														{
+															"key": "Content-Type",
+															"value": "application/json"
+														}
+													],
+													"cookie": [],
+													"body": "{\n  \"code\": \"<integer>\",\n  \"message\": \"<string>\",\n  \"items\": {\n    \"nullable\": true\n  }\n}"
+												}
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "infocliente",
+							"item": [
+								{
+									"name": "getallclientes",
+									"item": [
+										{
+											"name": "/api/v1/infocliente/getallclientes",
+											"request": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "text/plain"
+													}
+												],
+												"url": "{{baseUrl}}/api/v1/infocliente/getallclientes"
+											},
+											"response": [
+												{
+													"name": "OK",
+													"originalRequest": {
+														"method": "GET",
+														"header": [
+															{
+																"key": "Accept",
+																"value": "text/plain"
+															}
+														],
+														"url": "{{baseUrl}}/api/v1/infocliente/getallclientes"
+													},
+													"status": "OK",
+													"code": 200,
+													"_postman_previewlanguage": "json",
+													"header": [
+														{
+															"key": "Content-Type",
+															"value": "application/json"
+														}
+													],
+													"cookie": [],
+													"body": "{\n  \"code\": \"<integer>\",\n  \"message\": \"<string>\",\n  \"items\": [\n    {\n      \"clienteId\": \"<string>\",\n      \"nombre\": \"<string>\",\n      \"numeroIdentidad\": \"<string>\",\n      \"direccion\": \"<string>\",\n      \"telefono\": \"<string>\",\n      \"email\": \"<string>\"\n    },\n    {\n      \"clienteId\": \"<string>\",\n      \"nombre\": \"<string>\",\n      \"numeroIdentidad\": \"<string>\",\n      \"direccion\": \"<string>\",\n      \"telefono\": \"<string>\",\n      \"email\": \"<string>\"\n    }\n  ]\n}"
+												},
+												{
+													"name": "Bad Request",
+													"originalRequest": {
+														"method": "GET",
+														"header": [
+															{
+																"key": "Accept",
+																"value": "text/plain"
+															}
+														],
+														"url": "{{baseUrl}}/api/v1/infocliente/getallclientes"
+													},
+													"status": "Bad Request",
+													"code": 400,
+													"_postman_previewlanguage": "json",
+													"header": [
+														{
+															"key": "Content-Type",
+															"value": "application/json"
+														}
+													],
+													"cookie": [],
+													"body": "{\n  \"code\": \"<integer>\",\n  \"message\": \"<string>\",\n  \"items\": [\n    {\n      \"saldoActual\": \"<double>\",\n      \"saldoDisponible\": \"<double>\",\n      \"interesBonificable\": \"<double>\",\n      \"cuotaMinima\": \"<double>\",\n      \"montoContadoConIntereses\": \"<double>\",\n      \"montoTotal\": \"<double>\",\n      \"montoTotalMesActualAnterior\": \"<double>\"\n    },\n    {\n      \"saldoActual\": \"<double>\",\n      \"saldoDisponible\": \"<double>\",\n      \"interesBonificable\": \"<double>\",\n      \"cuotaMinima\": \"<double>\",\n      \"montoContadoConIntereses\": \"<double>\",\n      \"montoTotal\": \"<double>\",\n      \"montoTotalMesActualAnterior\": \"<double>\"\n    }\n  ]\n}"
+												},
+												{
+													"name": "Internal Server Error",
+													"originalRequest": {
+														"method": "GET",
+														"header": [
+															{
+																"key": "Accept",
+																"value": "text/plain"
+															}
+														],
+														"url": "{{baseUrl}}/api/v1/infocliente/getallclientes"
+													},
+													"status": "Internal Server Error",
+													"code": 500,
+													"_postman_previewlanguage": "json",
+													"header": [
+														{
+															"key": "Content-Type",
+															"value": "application/json"
+														}
+													],
+													"cookie": [],
+													"body": "{\n  \"code\": \"<integer>\",\n  \"message\": \"<string>\",\n  \"items\": [\n    {\n      \"saldoActual\": \"<double>\",\n      \"saldoDisponible\": \"<double>\",\n      \"interesBonificable\": \"<double>\",\n      \"cuotaMinima\": \"<double>\",\n      \"montoContadoConIntereses\": \"<double>\",\n      \"montoTotal\": \"<double>\",\n      \"montoTotalMesActualAnterior\": \"<double>\"\n    },\n    {\n      \"saldoActual\": \"<double>\",\n      \"saldoDisponible\": \"<double>\",\n      \"interesBonificable\": \"<double>\",\n      \"cuotaMinima\": \"<double>\",\n      \"montoContadoConIntereses\": \"<double>\",\n      \"montoTotal\": \"<double>\",\n      \"montoTotalMesActualAnterior\": \"<double>\"\n    }\n  ]\n}"
+												}
+											]
+										}
+									]
+								},
+								{
+									"name": "gettarjetabyidcliente",
+									"item": [
+										{
+											"name": "/api/v1/infocliente/gettarjetabyidcliente",
+											"request": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "text/plain"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/api/v1/infocliente/gettarjetabyidcliente?IdCliente=5",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"v1",
+														"infocliente",
+														"gettarjetabyidcliente"
+													],
+													"query": [
+														{
+															"key": "IdCliente",
+															"value": "5"
+														}
+													]
+												}
+											},
+											"response": [
+												{
+													"name": "OK",
+													"originalRequest": {
+														"method": "GET",
+														"header": [
+															{
+																"key": "Accept",
+																"value": "text/plain"
+															}
+														],
+														"url": {
+															"raw": "{{baseUrl}}/api/v1/infocliente/gettarjetabyidcliente?IdCliente=<integer>",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"api",
+																"v1",
+																"infocliente",
+																"gettarjetabyidcliente"
+															],
+															"query": [
+																{
+																	"key": "IdCliente",
+																	"value": "<integer>"
+																}
+															]
+														}
+													},
+													"status": "OK",
+													"code": 200,
+													"_postman_previewlanguage": "json",
+													"header": [
+														{
+															"key": "Content-Type",
+															"value": "application/json"
+														}
+													],
+													"cookie": [],
+													"body": "{\n  \"code\": \"<integer>\",\n  \"message\": \"<string>\",\n  \"items\": {\n    \"numeroTarjeta\": \"<string>\",\n    \"clienteId\": \"<integer>\",\n    \"limiteCredito\": \"<double>\",\n    \"saldoActual\": \"<double>\",\n    \"saldoDisp\": \"<double>\",\n    \"fchApertura\": \"<string>\",\n    \"fchaVenc\": \"<string>\",\n    \"fchCorteIni\": \"<string>\",\n    \"fchCorteFin\": \"<string>\",\n    \"descBeneficios\": \"<string>\"\n  }\n}"
+												},
+												{
+													"name": "Bad Request",
+													"originalRequest": {
+														"method": "GET",
+														"header": [
+															{
+																"key": "Accept",
+																"value": "text/plain"
+															}
+														],
+														"url": {
+															"raw": "{{baseUrl}}/api/v1/infocliente/gettarjetabyidcliente?IdCliente=<integer>",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"api",
+																"v1",
+																"infocliente",
+																"gettarjetabyidcliente"
+															],
+															"query": [
+																{
+																	"key": "IdCliente",
+																	"value": "<integer>"
+																}
+															]
+														}
+													},
+													"status": "Bad Request",
+													"code": 400,
+													"_postman_previewlanguage": "json",
+													"header": [
+														{
+															"key": "Content-Type",
+															"value": "application/json"
+														}
+													],
+													"cookie": [],
+													"body": "{\n  \"code\": \"<integer>\",\n  \"message\": \"<string>\",\n  \"items\": {\n    \"numeroTarjeta\": \"<string>\",\n    \"clienteId\": \"<integer>\",\n    \"limiteCredito\": \"<double>\",\n    \"saldoActual\": \"<double>\",\n    \"saldoDisp\": \"<double>\",\n    \"fchApertura\": \"<string>\",\n    \"fchaVenc\": \"<string>\",\n    \"fchCorteIni\": \"<string>\",\n    \"fchCorteFin\": \"<string>\",\n    \"descBeneficios\": \"<string>\"\n  }\n}"
+												},
+												{
+													"name": "Internal Server Error",
+													"originalRequest": {
+														"method": "GET",
+														"header": [
+															{
+																"key": "Accept",
+																"value": "text/plain"
+															}
+														],
+														"url": {
+															"raw": "{{baseUrl}}/api/v1/infocliente/gettarjetabyidcliente?IdCliente=<integer>",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"api",
+																"v1",
+																"infocliente",
+																"gettarjetabyidcliente"
+															],
+															"query": [
+																{
+																	"key": "IdCliente",
+																	"value": "<integer>"
+																}
+															]
+														}
+													},
+													"status": "Internal Server Error",
+													"code": 500,
+													"_postman_previewlanguage": "json",
+													"header": [
+														{
+															"key": "Content-Type",
+															"value": "application/json"
+														}
+													],
+													"cookie": [],
+													"body": "{\n  \"code\": \"<integer>\",\n  \"message\": \"<string>\",\n  \"items\": {\n    \"numeroTarjeta\": \"<string>\",\n    \"clienteId\": \"<integer>\",\n    \"limiteCredito\": \"<double>\",\n    \"saldoActual\": \"<double>\",\n    \"saldoDisp\": \"<double>\",\n    \"fchApertura\": \"<string>\",\n    \"fchaVenc\": \"<string>\",\n    \"fchCorteIni\": \"<string>\",\n    \"fchCorteFin\": \"<string>\",\n    \"descBeneficios\": \"<string>\"\n  }\n}"
+												}
+											]
+										}
+									]
+								},
+								{
+									"name": "getpagosfromtarjeta",
+									"item": [
+										{
+											"name": "/api/v1/infocliente/getpagosfromtarjeta",
+											"request": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "text/plain"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/api/v1/infocliente/getpagosfromtarjeta?NumeroTarjeta=1234-5678-9012-3",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"v1",
+														"infocliente",
+														"getpagosfromtarjeta"
+													],
+													"query": [
+														{
+															"key": "NumeroTarjeta",
+															"value": "1234-5678-9012-3"
+														}
+													]
+												}
+											},
+											"response": [
+												{
+													"name": "OK",
+													"originalRequest": {
+														"method": "GET",
+														"header": [
+															{
+																"key": "Accept",
+																"value": "text/plain"
+															}
+														],
+														"url": {
+															"raw": "{{baseUrl}}/api/v1/infocliente/getpagosfromtarjeta?NumeroTarjeta=<string>",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"api",
+																"v1",
+																"infocliente",
+																"getpagosfromtarjeta"
+															],
+															"query": [
+																{
+																	"key": "NumeroTarjeta",
+																	"value": "<string>"
+																}
+															]
+														}
+													},
+													"status": "OK",
+													"code": 200,
+													"_postman_previewlanguage": "json",
+													"header": [
+														{
+															"key": "Content-Type",
+															"value": "application/json"
+														}
+													],
+													"cookie": [],
+													"body": "{\n  \"code\": \"<integer>\",\n  \"message\": \"<string>\",\n  \"items\": [\n    {\n      \"numeroTarjeta\": \"<string>\",\n      \"montoPago\": \"<double>\",\n      \"montoDisp\": \"<double>\",\n      \"montoPagado\": \"<double>\",\n      \"montoMora\": \"<double>\",\n      \"fchaPago\": \"<string>\",\n      \"fchCorteIniP\": \"<string>\",\n      \"fchCorteFinP\": \"<string>\"\n    },\n    {\n      \"numeroTarjeta\": \"<string>\",\n      \"montoPago\": \"<double>\",\n      \"montoDisp\": \"<double>\",\n      \"montoPagado\": \"<double>\",\n      \"montoMora\": \"<double>\",\n      \"fchaPago\": \"<string>\",\n      \"fchCorteIniP\": \"<string>\",\n      \"fchCorteFinP\": \"<string>\"\n    }\n  ]\n}"
+												},
+												{
+													"name": "Bad Request",
+													"originalRequest": {
+														"method": "GET",
+														"header": [
+															{
+																"key": "Accept",
+																"value": "text/plain"
+															}
+														],
+														"url": {
+															"raw": "{{baseUrl}}/api/v1/infocliente/getpagosfromtarjeta?NumeroTarjeta=<string>",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"api",
+																"v1",
+																"infocliente",
+																"getpagosfromtarjeta"
+															],
+															"query": [
+																{
+																	"key": "NumeroTarjeta",
+																	"value": "<string>"
+																}
+															]
+														}
+													},
+													"status": "Bad Request",
+													"code": 400,
+													"_postman_previewlanguage": "json",
+													"header": [
+														{
+															"key": "Content-Type",
+															"value": "application/json"
+														}
+													],
+													"cookie": [],
+													"body": "{\n  \"code\": \"<integer>\",\n  \"message\": \"<string>\",\n  \"items\": [\n    {\n      \"numeroTarjeta\": \"<string>\",\n      \"montoPago\": \"<double>\",\n      \"montoDisp\": \"<double>\",\n      \"montoPagado\": \"<double>\",\n      \"montoMora\": \"<double>\",\n      \"fchaPago\": \"<string>\",\n      \"fchCorteIniP\": \"<string>\",\n      \"fchCorteFinP\": \"<string>\"\n    },\n    {\n      \"numeroTarjeta\": \"<string>\",\n      \"montoPago\": \"<double>\",\n      \"montoDisp\": \"<double>\",\n      \"montoPagado\": \"<double>\",\n      \"montoMora\": \"<double>\",\n      \"fchaPago\": \"<string>\",\n      \"fchCorteIniP\": \"<string>\",\n      \"fchCorteFinP\": \"<string>\"\n    }\n  ]\n}"
+												},
+												{
+													"name": "Internal Server Error",
+													"originalRequest": {
+														"method": "GET",
+														"header": [
+															{
+																"key": "Accept",
+																"value": "text/plain"
+															}
+														],
+														"url": {
+															"raw": "{{baseUrl}}/api/v1/infocliente/getpagosfromtarjeta?NumeroTarjeta=<string>",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"api",
+																"v1",
+																"infocliente",
+																"getpagosfromtarjeta"
+															],
+															"query": [
+																{
+																	"key": "NumeroTarjeta",
+																	"value": "<string>"
+																}
+															]
+														}
+													},
+													"status": "Internal Server Error",
+													"code": 500,
+													"_postman_previewlanguage": "json",
+													"header": [
+														{
+															"key": "Content-Type",
+															"value": "application/json"
+														}
+													],
+													"cookie": [],
+													"body": "{\n  \"code\": \"<integer>\",\n  \"message\": \"<string>\",\n  \"items\": [\n    {\n      \"numeroTarjeta\": \"<string>\",\n      \"montoPago\": \"<double>\",\n      \"montoDisp\": \"<double>\",\n      \"montoPagado\": \"<double>\",\n      \"montoMora\": \"<double>\",\n      \"fchaPago\": \"<string>\",\n      \"fchCorteIniP\": \"<string>\",\n      \"fchCorteFinP\": \"<string>\"\n    },\n    {\n      \"numeroTarjeta\": \"<string>\",\n      \"montoPago\": \"<double>\",\n      \"montoDisp\": \"<double>\",\n      \"montoPagado\": \"<double>\",\n      \"montoMora\": \"<double>\",\n      \"fchaPago\": \"<string>\",\n      \"fchCorteIniP\": \"<string>\",\n      \"fchCorteFinP\": \"<string>\"\n    }\n  ]\n}"
+												}
+											]
+										}
+									]
+								},
+								{
+									"name": "gettransaccionesbyrangedate",
+									"item": [
+										{
+											"name": "/api/v1/infocliente/gettransaccionesbyrangedate",
+											"request": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "text/plain"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/api/v1/infocliente/gettransaccionesbyrangedate?NumeroTarjeta=<string>&FchInicio=<string>&FchFin=<string>",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"v1",
+														"infocliente",
+														"gettransaccionesbyrangedate"
+													],
+													"query": [
+														{
+															"key": "NumeroTarjeta",
+															"value": "<string>"
+														},
+														{
+															"key": "FchInicio",
+															"value": "<string>"
+														},
+														{
+															"key": "FchFin",
+															"value": "<string>"
+														}
+													]
+												}
+											},
+											"response": [
+												{
+													"name": "OK",
+													"originalRequest": {
+														"method": "GET",
+														"header": [
+															{
+																"key": "Accept",
+																"value": "text/plain"
+															}
+														],
+														"url": {
+															"raw": "{{baseUrl}}/api/v1/infocliente/gettransaccionesbyrangedate?NumeroTarjeta=<string>&FchInicio=<string>&FchFin=<string>",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"api",
+																"v1",
+																"infocliente",
+																"gettransaccionesbyrangedate"
+															],
+															"query": [
+																{
+																	"key": "NumeroTarjeta",
+																	"value": "<string>"
+																},
+																{
+																	"key": "FchInicio",
+																	"value": "<string>"
+																},
+																{
+																	"key": "FchFin",
+																	"value": "<string>"
+																}
+															]
+														}
+													},
+													"status": "OK",
+													"code": 200,
+													"_postman_previewlanguage": "json",
+													"header": [
+														{
+															"key": "Content-Type",
+															"value": "application/json"
+														}
+													],
+													"cookie": [],
+													"body": "{\n  \"code\": \"<integer>\",\n  \"message\": \"<string>\",\n  \"items\": [\n    {\n      \"numeroTarjeta\": \"<string>\",\n      \"montoTransaccion\": \"<double>\",\n      \"fchaTransaccion\": \"<string>\",\n      \"descripcion\": \"<string>\",\n      \"tipoTransaccion\": \"<string>\",\n      \"categoria\": \"<string>\"\n    },\n    {\n      \"numeroTarjeta\": \"<string>\",\n      \"montoTransaccion\": \"<double>\",\n      \"fchaTransaccion\": \"<string>\",\n      \"descripcion\": \"<string>\",\n      \"tipoTransaccion\": \"<string>\",\n      \"categoria\": \"<string>\"\n    }\n  ]\n}"
+												},
+												{
+													"name": "Bad Request",
+													"originalRequest": {
+														"method": "GET",
+														"header": [
+															{
+																"key": "Accept",
+																"value": "text/plain"
+															}
+														],
+														"url": {
+															"raw": "{{baseUrl}}/api/v1/infocliente/gettransaccionesbyrangedate?NumeroTarjeta=<string>&FchInicio=<string>&FchFin=<string>",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"api",
+																"v1",
+																"infocliente",
+																"gettransaccionesbyrangedate"
+															],
+															"query": [
+																{
+																	"key": "NumeroTarjeta",
+																	"value": "<string>"
+																},
+																{
+																	"key": "FchInicio",
+																	"value": "<string>"
+																},
+																{
+																	"key": "FchFin",
+																	"value": "<string>"
+																}
+															]
+														}
+													},
+													"status": "Bad Request",
+													"code": 400,
+													"_postman_previewlanguage": "json",
+													"header": [
+														{
+															"key": "Content-Type",
+															"value": "application/json"
+														}
+													],
+													"cookie": [],
+													"body": "{\n  \"code\": \"<integer>\",\n  \"message\": \"<string>\",\n  \"items\": [\n    {\n      \"numeroTarjeta\": \"<string>\",\n      \"montoTransaccion\": \"<double>\",\n      \"fchaTransaccion\": \"<string>\",\n      \"descripcion\": \"<string>\",\n      \"tipoTransaccion\": \"<string>\",\n      \"categoria\": \"<string>\"\n    },\n    {\n      \"numeroTarjeta\": \"<string>\",\n      \"montoTransaccion\": \"<double>\",\n      \"fchaTransaccion\": \"<string>\",\n      \"descripcion\": \"<string>\",\n      \"tipoTransaccion\": \"<string>\",\n      \"categoria\": \"<string>\"\n    }\n  ]\n}"
+												},
+												{
+													"name": "Internal Server Error",
+													"originalRequest": {
+														"method": "GET",
+														"header": [
+															{
+																"key": "Accept",
+																"value": "text/plain"
+															}
+														],
+														"url": {
+															"raw": "{{baseUrl}}/api/v1/infocliente/gettransaccionesbyrangedate?NumeroTarjeta=<string>&FchInicio=<string>&FchFin=<string>",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"api",
+																"v1",
+																"infocliente",
+																"gettransaccionesbyrangedate"
+															],
+															"query": [
+																{
+																	"key": "NumeroTarjeta",
+																	"value": "<string>"
+																},
+																{
+																	"key": "FchInicio",
+																	"value": "<string>"
+																},
+																{
+																	"key": "FchFin",
+																	"value": "<string>"
+																}
+															]
+														}
+													},
+													"status": "Internal Server Error",
+													"code": 500,
+													"_postman_previewlanguage": "json",
+													"header": [
+														{
+															"key": "Content-Type",
+															"value": "application/json"
+														}
+													],
+													"cookie": [],
+													"body": "{\n  \"code\": \"<integer>\",\n  \"message\": \"<string>\",\n  \"items\": [\n    {\n      \"numeroTarjeta\": \"<string>\",\n      \"montoTransaccion\": \"<double>\",\n      \"fchaTransaccion\": \"<string>\",\n      \"descripcion\": \"<string>\",\n      \"tipoTransaccion\": \"<string>\",\n      \"categoria\": \"<string>\"\n    },\n    {\n      \"numeroTarjeta\": \"<string>\",\n      \"montoTransaccion\": \"<double>\",\n      \"fchaTransaccion\": \"<string>\",\n      \"descripcion\": \"<string>\",\n      \"tipoTransaccion\": \"<string>\",\n      \"categoria\": \"<string>\"\n    }\n  ]\n}"
+												}
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "logs",
+							"item": [
+								{
+									"name": "addlogsindb",
+									"item": [
+										{
+											"name": "/api/v1/logs/addlogsindb",
+											"request": {
+												"method": "POST",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json"
+													},
+													{
+														"key": "Accept",
+														"value": "text/plain"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n  \"errorMessage\": \"<string>\",\n  \"errorNumber\": \"<integer>\",\n  \"originatingComponent\": \"<string>\",\n  \"additionalInfo\": \"<string>\"\n}",
+													"options": {
+														"raw": {
+															"headerFamily": "json",
+															"language": "json"
+														}
+													}
+												},
+												"url": "{{baseUrl}}/api/v1/logs/addlogsindb"
+											},
+											"response": [
+												{
+													"name": "OK",
+													"originalRequest": {
+														"method": "POST",
+														"header": [
+															{
+																"key": "Content-Type",
+																"value": "application/json"
+															},
+															{
+																"key": "Accept",
+																"value": "text/plain"
+															}
+														],
+														"body": {
+															"mode": "raw",
+															"raw": "{\n  \"errorMessage\": \"<string>\",\n  \"errorNumber\": \"<integer>\",\n  \"originatingComponent\": \"<string>\",\n  \"additionalInfo\": \"<string>\"\n}",
+															"options": {
+																"raw": {
+																	"headerFamily": "json",
+																	"language": "json"
+																}
+															}
+														},
+														"url": "{{baseUrl}}/api/v1/logs/addlogsindb"
+													},
+													"status": "OK",
+													"code": 200,
+													"_postman_previewlanguage": "json",
+													"header": [
+														{
+															"key": "Content-Type",
+															"value": "application/json"
+														}
+													],
+													"cookie": [],
+													"body": "{\n  \"code\": \"<integer>\",\n  \"message\": \"<string>\"\n}"
+												},
+												{
+													"name": "Bad Request",
+													"originalRequest": {
+														"method": "POST",
+														"header": [
+															{
+																"key": "Content-Type",
+																"value": "application/json"
+															},
+															{
+																"key": "Accept",
+																"value": "text/plain"
+															}
+														],
+														"body": {
+															"mode": "raw",
+															"raw": "{\n  \"errorMessage\": \"<string>\",\n  \"errorNumber\": \"<integer>\",\n  \"originatingComponent\": \"<string>\",\n  \"additionalInfo\": \"<string>\"\n}",
+															"options": {
+																"raw": {
+																	"headerFamily": "json",
+																	"language": "json"
+																}
+															}
+														},
+														"url": "{{baseUrl}}/api/v1/logs/addlogsindb"
+													},
+													"status": "Bad Request",
+													"code": 400,
+													"_postman_previewlanguage": "json",
+													"header": [
+														{
+															"key": "Content-Type",
+															"value": "application/json"
+														}
+													],
+													"cookie": [],
+													"body": "{\n  \"code\": \"<integer>\",\n  \"message\": \"<string>\"\n}"
+												},
+												{
+													"name": "Internal Server Error",
+													"originalRequest": {
+														"method": "POST",
+														"header": [
+															{
+																"key": "Content-Type",
+																"value": "application/json"
+															},
+															{
+																"key": "Accept",
+																"value": "text/plain"
+															}
+														],
+														"body": {
+															"mode": "raw",
+															"raw": "{\n  \"errorMessage\": \"<string>\",\n  \"errorNumber\": \"<integer>\",\n  \"originatingComponent\": \"<string>\",\n  \"additionalInfo\": \"<string>\"\n}",
+															"options": {
+																"raw": {
+																	"headerFamily": "json",
+																	"language": "json"
+																}
+															}
+														},
+														"url": "{{baseUrl}}/api/v1/logs/addlogsindb"
+													},
+													"status": "Internal Server Error",
+													"code": 500,
+													"_postman_previewlanguage": "json",
+													"header": [
+														{
+															"key": "Content-Type",
+															"value": "application/json"
+														}
+													],
+													"cookie": [],
+													"body": "{\n  \"code\": \"<integer>\",\n  \"message\": \"<string>\"\n}"
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "https://localhost:44312"
+		}
+	]
+}
