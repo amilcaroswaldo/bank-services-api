@@ -14,5 +14,6 @@ namespace creditcard.Domain.EstadoCuentaResponse
         public double CuotaMinima { get; set; }
         public double MontoContadoConIntereses { get; set; }
         public double MontoTotal { get; set; }
+        public double MontoTotalMesActualAnterior { get; set; }
     }
 }

@@ -115,13 +115,18 @@ BEGIN
         DECLARE @MontoContadoConIntereses DECIMAL(18, 2);
         DECLARE @FCH_CORTE_INICIO DATE;
         DECLARE @FCH_CORTE_FIN DATE;
-
+		DECLARE @Monto_total_Mes_actual_Anterior  DECIMAL(18, 2);
+	
         SELECT @saldo_actual  = saldo_actual , 
                @Saldo_Disponible = Saldo_Disponible,
                @FCH_CORTE_INICIO = fecha_corte_inicio,
                @FCH_CORTE_FIN = fecha_corte_fin 
         FROM Tarjetas
         WHERE Numero_Tarjeta = @Numero_Tarjeta;
+       
+       SELECT @Monto_total_Mes_actual_Anterior= SUM(monto) from transacciones t 
+       where numero_tarjeta = @Numero_Tarjeta 
+	   and t.fecha BETWEEN DATEADD(DAY, 1, EOMONTH(GETDATE(), -1)) AND CONVERT(DATE,GETDATE());
 
         SET @InteresBonificable = PackageEstadoCuenta.fn_CalcularInteresBonificable(@Numero_Tarjeta);
         SET @CuotaMinima = PackageEstadoCuenta.fn_CalcularCuotaMinima(@Numero_Tarjeta );
@@ -133,7 +138,8 @@ BEGIN
                @InteresBonificable AS InteresBonificable,
                @CuotaMinima AS CuotaMinima,
                @MontoTotal AS MontoTotal,
-               @MontoContadoConIntereses AS MontoContadoConIntereses;
+               @MontoContadoConIntereses AS MontoContadoConIntereses,
+               @Monto_total_Mes_actual_Anterior AS MontoTotalMesActualAnterior;
     END TRY
     BEGIN CATCH
         DECLARE @ErrorMessage NVARCHAR(4000);
